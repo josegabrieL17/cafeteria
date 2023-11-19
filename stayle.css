@@ -1,19 +1,258 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #e98158;
+    background-image: url(fundo-de-graos-de-cafe_1756-449-removebg-preview.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    margin: 0;
 }
-.header {
+
+h2{
+    text-decoration: underline;
+}
+  /* fundo */
+
+
+  /* final */
+
+  @keyframes moveBackground {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(100vw - 100%), calc(100vh - 100%));
+    }
+  }
+
+
+
+.sujestao{
     text-align: center;
-    padding: 10px;
-    background-color: #faf9f8;
+    text-decoration:underline;
 }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: relative 2px;
+    border: solid 2px;
+    border-color: black;
+
+    /* fontes */
+    font-family: 'Eagle Lake', serif;
+font-family: 'Playfair Display SC', serif;
+}
+
+.menu{
+    text-align: center;
+}
+
+.header h1 {
+    margin-right: 10px;
+}
+
+.header img.cafe {
+    width: 100px;
+    margin-left: 10px;
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
     padding: 20px;
 }
 .menu div {
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     padding: 10px;
     width: 30%;
+    background-color: #cd853f ;
+}
+.fefe {
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 30%;
+}
+
+
+/* Seu CSS existente... */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.menu div {
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 30%;
+    background-color:  ;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+xsgfxfvbuscyvg
+
+/* Seu CSS existente... */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu div {
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+    transition: opacity 0.5s ease; /* Adicionando uma transição de opacidade */
+}
+
+.menu div:hover {
+    opacity: 0.8; /* Opacidade ao passar o mouse */
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    animation: slideDown 0.5s ease; /* Adicionando uma animação de descida suave */
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.pedido-button{
+    background-color: #fff1aa;
+    border: solid 1px rgb(128, 90, 0);
+    border-radius: 3px;
+    font-size: 20px
+}
+
+.pedido-button:hover {
+    
+}
+
+
+.filtragem {
+    text-align: center;
+    background-color: #e9aa58bc;
+    background-position: 0px 0px 0px 0px;
+    margin: 100px 30px 80px 315px;
+    align-items: cent;
+    border: 2px solid #f7b662;
+    border-radius: 8px; 
+    padding: 20px 20px 20px 20px;
+    height:400px;
+    width: 1200px;
+}
+.opcao-coagem {
+    display: inline-block;
+    margin: 10px;
+}
+
+.opcao-coagem img {
+    max-width: 100%;
+}
+
+.opcao-coagem p {
+    margin-top: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+
+
+.opcao-coagem .opcao-info {
+    text-align: left;
+}
+
+.opcao-coagem .opcao-titulo {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.opcao-coagem .opcao-descricao {
+    margin-top: 5px;
+}
+
+
+.fundador {
+    background-color: #f7b662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 30px 80px 315px;
+    width: 1227px;
+    height: auto;
+    padding: 15px;
+    opacity: 0;
+    animation: slideIn 1.5s ease-in-out forwards;
+
+    border: solid rgb(255, 191, 126);
+    border-radius: 5px;
+}
+
+.fundador-img {
+    max-width: 45%;
+    margin: 5px;
+    align-items: center
+;
+    margin-right: 10px;
+    width: 100%;
+    height: 49%;
+}
+
+
+.fundador .conteudo {
+    flex: 1; /* Esta propriedade faz o contêiner ocupar todo o espaço disponível horizontalmente */
+    margin-left: 20px; /* Esta margem à esquerda controla a distância entre a imagem e o texto */
+    justify-content: space-between; /* Coloca o texto à direita da imagem */
+}
+
+.fundador .texto {
+    max-width: 100%; /* Ajuste o valor conforme necessário */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta a altura da tela inteira */
+}
+
+.rua{
+    text-align: center;
+    margin-top: -3%;
+    color: yellow;
+}
+.mapa {
+    margin-top: -20%;
+    width: 600px; /* ou a largura desejada */
+    height: 450px; /* ou a altura desejada */
 }

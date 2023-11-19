@@ -1,32 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stayle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <style>
+
+
+<div class="header">
+    <h1>Coffe Break</h1> 
+    <img class="cafe" src="graos-de-cafe (1).png" width="100" alt="">
+</div>
+
+
+ 
+
+
+
+<section class="menu">
+
+    <div class="cafe" id="cafe">
+        <h2 onclick="toggleMenu('cafeContent')">Café</h2>
+        <section class="accordion-content" id="cafeContent">
+            <ul>
+                <li>
+                    <h3>Expresso</h3>
+                    <p>Um shot de café intenso e encorpado.</p>
+                    <p>Tamanho: 30ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                <li>
+                    <h3>Café Americano</h3>
+                    <p>Café mais suave, em uma xícara maior.</p>
+                    <p>Tamanho: 150ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+
+                    <li>
+                        <h3>Café Lattle</h3>
+                        <p>Café mais suave, em uma xícara maior.</p>
+                        <p>150ml</p>
+                        <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                    </li>
+
+                    <li>
+                        <h3>Cappuccino</h3>
+                        <p>Café expresso, leite vaporizado e espuma de leite cremosa.</p>
+                        <p>Tamanho: 180ml</p>
+                        <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                    </li>
+
+                    <li>
+                        <h3>Mocha</h3>
+                        <p> Café expresso, leite vaporizado, chocolate e cobertura de chantilly.</p>
+                        <p>Tamanho:300ml</p>
+                        <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                    </li>
+
+                    <li>
+                        <h3>Café Macchiato</h3>
+                        <p>Café expresso com uma pequena quantidade de leite vaporizado.</p>
+                        <p>Tamanho: 50ml</p>
+                        <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                    </li>
+
+                    <li>
+                        <h3>Café Vienense</h3>
+                        <p>Café preto coberto com creme de chantilly e raspas de chocolate.</p>
+                        <p>Tamanho: 200ml</p>
+                        <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                    </li>
+
+                    <li>
+                        <h3>Café Affogato</h3>
+                        <p>Uma bola de sorvete de baunilha coberta com um shot de café expresso quente.</p>
+                        <p>Tamanho: Varia com a preferência do cliente</p>
+                        <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                    </li>
+
+                    <li>
+                        <h3>Café Irish</h3>
+                        <p>Café com uísque irlandês, açúcar e cobertura de chantilly.</p>
+                        <p>Tamanho: 180ml</p>
+                        <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                    </li>
+
+                    <li>
+                        <h3>Café Caramelado</h3>
+                        <p>Café expresso suave com um toque de caramelo, finalizado com chantilly.</p>
+                        <p>Tamanho: 250ml</p>
+                        <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                    </li>
+            </ul>
+        </section>
+    </div>
+    <div class="cha" id="cha">
+        <h2 onclick="toggleMenu('chaContent')">Chás</h2>
+        <section class="accordion-content" id="chaContent">
+            <ul>
+                <li>
+                    <h3>Chá Verde</h3>
+                    <p>Chá leve e refrescante, rico em antioxidantes.</p>
+                    <p>Tamanho: 200ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                <li>
+                    <h3>Chá Preto</h3>
+                    <p>Chá robusto e energizante.</p>
+                    <p>Tamanho: 200ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                <li>
+                    <h3>há de Camomila</h3>
+                    <p>Chá suave e relaxante, feito com flores de camomila.</p>
+                    <p>Tamanho: 250ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+
+                
+                <li>
+                    <h3>Chá de Frutas Vermelhas</h3>
+                    <p>Infusão frutada e vibrante com morangos, framboesas e mirtilos.</p>
+                    <p>Tamanho: 220ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Chá Chai</h3>
+                    <p>Mistura de chá preto com especiarias como canela, cardamomo e gengibre.</p>
+                    <p>Tamanho: 240m</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Chá de Hibisco com Gengibre</h3>
+                    <p>Infusão de hibisco e gengibre, refrescante e levemente picante.</p>
+                    <p>Tamanho: 220ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Chá de Erva-Cidreira com Mel</h3>
+                    <p>Chá de erva-cidreira adoçado com mel, calmante e doce.</p>
+                    <p>Tamanho: 200ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Chá de Rooibos</h3>
+                    <p>Chá sul-africano sem cafeína, suave e levemente adocicado.</p>
+                    <p>amanho: 250ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Chá de Frutas Exóticas</h3>
+                    <p>Mistura de frutas tropicais para um chá vibrante e aromático.</p>
+                    <p>Tamanho: 230ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Chá de Gengibre e Limão</h3>
+                    <p>Infusão quente com gengibre fresco e toques de limão.</p>
+                    <p>Tamanho: 200ml</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+
+            </ul>
+        </section>
+    </div>
+
+    <div class="doce" id="doce">
+        <h2 onclick="toggleMenu('doceContent')"">Aperitivos</h2>
+        <section class="accordion-content" id="doceContent">
+            <ul>
+                <li>
+                    <h3>Pão de Queijo</h3>
+                    <p>Deliciosos bolinhos de queijo, assados e crocantes.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                <li>
+                    <h3>Bruschetta</h3>
+                    <p>Pedaços de pão torrado com tomate e manjericão.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Croissant de Chocolate</h3>
+                    <p>Croissant macio e folhado recheado com chocolate derretido.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Torta de Maçã</h3>
+                    <p>Fatias de maçã assadas em uma massa delicada, com canela.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Sanduíche de Frango com Pesto</h3>
+                    <p>Frango grelhado, queijo, e molho pesto em um pão crocante.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Cupcake de Baunilha com Cobertura de Morango</h3>
+                    <p>Cupcake fofo de baunilha com cobertura cremosa de morango.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Bruschetta Caprese</h3>
+                    <p> Pão torrado coberto com tomate fresco, mussarela e manjericão.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Rolls de Salmão</h3>
+                    <p >Pequenos rolinhos recheados com salmão defumado, cream cheese e cebolinha.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Mini Quiches de Espinafre e Queijo</h3>
+                    <p>Mini quiches com recheio cremoso de espinafre e queijo.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Dip de Hummus com Vegetais Crocantes</h3>
+                    <p> Hummus cremoso servido com palitos de cenoura, pepino e pimentão.</p>
+                    <button class="pedido-button" onclick="handlePedidoClick()">Quero pedir</button>
+                </li>
+                
+            </ul>
+        </section>
+    </div>
+</section>
+
+<section class="filtragem">
+    <h2>Nossos tipos de coagem <br> Somente os melhores tipos</h2>
+    
+    <section class="opcao-coagem">
+        <img src="cafe-coado.png" alt="">
+        <div class="opcao-info">
+            <p class="opcao-titulo">Filtro Tradicional 80ml</p>
+            <p class="opcao-descricao">Aquele tradicional, <br> café preparado <br> no coador de pano</p>
+        </div>
+    </section>
+
+    <section class="opcao-coagem">
+        <img src="areopress.png" alt="">
+         <div class="opcao-info">
+                <p class="opcao-titulo">AeroPress 120ml</p>
+            <p class="opcao-descricao">Método de extração
+                <br> por infusão e pressão <br> do ar. Resulta no <br>café mas próximo <br> ao espresso</p>
+        </div>
+    </section>
+
+    <div class="opcao-coagem">
+        <img src="french-press.png" alt="">
+        <p>French Press 120ml</p>
+        <p class="p">Método de infusão entre <br> a água e o café que <br> mantém os óleos essenciais</p>
+    </div>
+
+    <section class="opcao-coagem">
+        <img src="hario-v60.png" alt="">
+        <p>Hario V60 120ml</p>
+        <p class="p">Coador em espiral que resulta <br> num café com doçura <br> e acidez acentuadas</p> 
+    </section>
+
+    <section class="opcao-coagem">
+        <img src="clever.png" alt="">
+        <p>Clever Coffee Dripper 120ml</p>
+        <p class="p">Método que permite controlar <br> o tempo de contato <br> entre a água e o café, <br> proporcionando inúmeras <br> variações de sabor</p>
+    </section>
+</section>
+
+
+<section class="fundador">
+    <div class="conteudo">
+        <img class="fundador-img" src="_7e768277-bb2c-448a-9ed1-52fd29224d45.jpeg" alt="">
+        <p class="oi">Em meio à agitação da cidade de Bela Vista, um refúgio acolhedor surgiu em 1955, graças ao sonho e dedicação de Eduardo Santos. Nas movimentadas ruas de São Paulo, Eduardo criou a Coffee Break não apenas como uma cafeteria, mas como um oásis onde as pessoas podiam dar uma pausa nos problemas do dia a dia.
+
+            No coração pulsante de Bela Vista, a Coffee Break começou como um modesto espaço onde as xícaras de café eram mais do que uma bebida quente; eram uma pausa revigorante, um momento de relaxamento em meio ao caos urbano. Eduardo acreditava que a vida movimentada merecia intervalos de tranquilidade, e a Coffee Break tornou-se o local perfeito para isso.
+            
+            Ao longo dos anos, a cafeteria tornou-se mais do que um ponto de encontro para amantes do café. Era um lugar onde as preocupações ficavam do lado de fora, e os clientes podiam desfrutar de uma xícara de café brasileiro autêntico enquanto trocavam sorrisos e histórias. Eduardo, sempre por trás do balcão com seu sorriso caloroso, entendia que a vida é mais saborosa quando compartilhada.
+            
+            O aroma inconfundível de grãos frescos torrados e a atmosfera acolhedora da Coffee Break fizeram dela um refúgio querido para a comunidade local e além. O slogan da cafeteria, "Um lugar para dar uma pausa nos problemas", reflete a filosofia que permeia cada xícara servida. Na Coffee Break, cada cliente é convidado a saborear não apenas o café, mas também um momento de tranquilidade em meio à correria da vida moderna.
+            
+            Hoje, a tradição continua, e a Coffee Break permanece como um ponto de equilíbrio em Bela Vista, onde as pausas são mais do que simples intervalos - são celebrações de simplicidade, amizade e, é claro, café delicioso.</p>
+    </div>
+</section>
+
+<h2 class="rua">Venha nos conhecer</h2>
+    <div class="mapa-container">
         
-    </style>
-<body>
-    <div class="header">
-        <h1>Bem-vindo à nossa cafeteria</h1>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!4v1700417999939!6m8!1m7!1sqGaTBeJotI9lgxX-hx8llQ!2m2!1d-23.6032644140984!2d-46.65161749234104!3f253.49643792572812!4f-0.5587133280606196!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="menu">
-        <div>
-            <h2>Café</h2>
-            <p>Experimente nosso café fresco e quente.</p>
-        </div>
-        <div>
-            <h2>Chá</h2>
-            <p>Desfrute de uma variedade de chás aromáticos.</p>
-        </div>
-        <div>
-            <h2>Doces</h2>
-            <p>Delicie-se com nossos doces caseiros.</p>
-        </div>
-    </div>
+    
+
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
