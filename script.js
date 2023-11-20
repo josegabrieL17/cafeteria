@@ -5,7 +5,6 @@ function toggleMenu(contentId) {
 
 
 function handlePedidoClick() {
-    // Substitua esta linha pelo comportamento desejado
     alert("Seu pedido foi adicionado ao carrinho!");
 }
 
